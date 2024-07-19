@@ -1,6 +1,6 @@
 [+] Fixed some things in menu
 
-[+] Added keybind that closes cheat >END<
+[+] Added keybind to close cheat >END<
 
 
 
