@@ -106,8 +106,7 @@ void imGuiMenu::espRender() {
 		ImGui::Text("Other");
 		ImGui::PopFont();
 		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));
-		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));
-		ImGui::PushFont(imGuiMenu::subTitleText);
+		ImGui::PushFont(imGuiMenu::subTitleText);         
 		ImGui::Checkbox("Visibility check", &espConf.checkSpotted);
 		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));  
 		ImGui::PopFont();       
@@ -122,10 +121,10 @@ void imGuiMenu::espRender() {
 		ImGui::PopFont();
 		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));
 		ImGui::Checkbox("Colour fill", &espConf.filledBox);
-		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace)); 
-		ImGui::PushFont(imGuiMenu::subTitleText);    
-		ImGui::Text("Fov changer");
-		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));   
+		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));
+		ImGui::PushFont(imGuiMenu::subTitleText);
+		ImGui::Text("Fov changer");            
+		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));
 		ImGui::SliderInt("FOV", &espConf.fov, 60, 140);
 		ImGui::EndChild();
 
@@ -235,8 +234,12 @@ void imGuiMenu::miscRender() {
 		ImGui::PopFont();
 		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));
 		ImGui::Checkbox("Bhop - buggy", &miscConf.bunnyHop);
+		ImGui::EndChild();
+
+		horizontalSplitter(HEIGHT);
+
+		ImGui::BeginChild("Visual", ImVec2(0, 0), true);
 		ImGui::PushFont(imGuiMenu::titleText);
-		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));  
 		ImGui::Text("Visual");
 		ImGui::PopFont();
 		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));
@@ -290,8 +293,9 @@ void imGuiMenu::aboutMeRender() {
 	if (tabCount == 5) {
 		ImGui::BeginChild("UPDATES", ImVec2(0, 0), true);
 		ImGui::PushFont(imGuiMenu::titleText);
-		ImGui::Text("[+] Added fov changer");
-		ImGui::Text("[+] Reworked menu a bit");
+		ImGui::Text("[+] Fixed for latest game update");
+		ImGui::Text("[+] Added Visibility check for esp");
+		ImGui::Text("[+] Added hitboxes for ragebot");
 		ImGui::PopFont();
 		ImGui::Text("");
 		ImGui::Dummy(ImVec2(0.0f, textSeparatorSpace));

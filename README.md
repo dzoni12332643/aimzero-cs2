@@ -1,15 +1,55 @@
-[+] Fixed some things in menu
+# :apple: Tim Apple
+CS2 external cheat
 
-[+] Added keybind that closes the cheat >END<
+![Preview](screenshots/preview.png)
 
+## Compiling from source
+Open `tim_apple.sln` in Visual Studio 2022, set build configuration to `Release | x64`.      
+Press Build solution and you should receive `tim_apple.exe` file.      
 
+## Usage
+*The cheat will **NOT** start if the game is not running.*
+### Controls
+Press the `INSERT` key to toggle the menu.     
+Press the `END` key to end the cheat.
 
-- HOW TO USE
-- run cs2 first
-- run aimzero.exe
-- thats it
+## Offsets
+### Script download
+Run the `offset_download.ps1` in the same folder as you're executable is
+### Manual download
+1. Download [client.dll.json](https://github.com/a2x/cs2-dumper/tree/main/output/client.dll.json), [offsets.json](https://github.com/a2x/cs2-dumper/tree/main/output/offsets.json) and [buttons.json](https://github.com/a2x/cs2-dumper/tree/main/output/buttons.json) 
+2. Place these files in the same folder as the executable file `tim_apple.exe` is    
 
-- base that i used > https://github.com/gmh5225/tim_apple
-![Screenshot (353)](https://github.com/user-attachments/assets/ce601a8d-c797-4a08-8e6b-379c2769352f)
-![Screenshot (354)](https://github.com/user-attachments/assets/5d6dd62e-b0b8-4c36-ac2a-19cfd7c7a5ec)
-![Screenshot (355)](https://github.com/user-attachments/assets/e9df0dba-33b5-43d1-b809-5224ac79ec73)
+## Features
+*Most features have visibility check*
+### ESP
+- Health bar (+ HP counter)
+- Player name
+- Weapon icons / names
+- Skeleton
+- Joints
+- Snap lines
+- Distance
+### Aim
+- Aimbot (+ Player lock)
+- Recoil control system
+- Trigger bot
+### Misc
+- Bunny hop
+- Anti flash
+- Dropped item ESP **(PERFORMANCE ISSUES)**
+
+## FAQ
+### How to use the weapon icon font file
+1. Make a folder called `fonts` in the same folder as the executable is.
+2. Add the file `weaponIcons.ttf` in the folder.
+*(If the program cannot see the file, weapon names will be displayed instead)*
+
+### Is this cheat read-only?
+It can be if you use the features that don't write to the game's memory.     
+Namely: All ESP, Bunny Hop and Trigger Bot
+
+## Credits
+- [ocornut/imgui](https://github.com/ocornut/imgui)
+- [nlohmann/json](https://github.com/nlohmann/json)
+- [a2x/cs2-dumper](https://github.com/a2x/cs2-dumper)
