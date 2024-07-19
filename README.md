@@ -1,6 +1,6 @@
-[+] Added fov changer
+[+] Fixed some things in menu
 
-[+] Reworked menu a bit
+[+] Added keybind that closes cheat >END<
 
 
 
