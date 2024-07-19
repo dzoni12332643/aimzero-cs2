@@ -1,6 +1,6 @@
-[+] Added fov changer
+[+] Fixed some things in menu
 
-[+] Reworked menu a bit
+[+] Added keybind to close the cheat >END<
 
 - HOW TO USE
 - First open cs2
