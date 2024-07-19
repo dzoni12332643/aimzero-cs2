@@ -4,7 +4,7 @@
 
 - HOW TO USE
 - First open cs2
-- then aimzero.exe
+- then open aimzero.exe
 - thats it enjoy
 
 Aimzero is external cheat for cs2 with good features
