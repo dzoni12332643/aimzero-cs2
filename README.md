@@ -1,3 +1,5 @@
+ADD ME ON DISCORD FOR HELP dzonii_1
+
 [+] Fixed some things in menu
 
 [+] Added keybind to close the cheat >END<
